@@ -1,0 +1,16 @@
+{
+  challenge(id: "abc") {
+    id
+    title
+    users(offset:2) {
+      results{
+        id
+        firstname
+        lastname
+      }
+      offset
+      limit
+      count
+    }
+  }
+}
