@@ -12,8 +12,7 @@ graphQLServer.use(compression());
 
 // GraphQl server
 graphQLServer.use("/graphql", bodyParser.json(), graphqlExpress({
-  schema,
-  // cacheControl: true
+  schema
 }));
 
 // The UI interface
